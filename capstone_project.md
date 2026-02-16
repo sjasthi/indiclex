@@ -1,9 +1,9 @@
-# ICS325 – Capstone Project
-## IndicLex – Multilingual Dictionary Management & Search Platform
+# ICS325 — Capstone Project
+## IndicLex — Multilingual Dictionary Management & Search Platform
 
-### **Course:** ICS325 – Web Application Development
+### **Course:** ICS325 — Web Application Development
 
-### **Project Name:** IndicLex – Multilingual Dictionary Management & Search Platform
+### **Project Name:** IndicLex — Multilingual Dictionary Management & Search Platform
 
 ---
 
@@ -39,6 +39,9 @@ Students will design, implement, and deploy a system that supports:
 
 **Database:**
 - MySQL
+
+**Hosting & Deployment:**
+- Bluehost (required)
 
 ---
 
@@ -113,8 +116,8 @@ The `preferences` table stores system-level default preferences. These defaults 
 - Theme (light or dark mode)
 
 **Preference resolution order (highest to lowest priority):**
-1. **User cookie** – If a user has set a preference via the UI, it is stored in a browser cookie and takes precedence.
-2. **System default** – If no cookie is present, the system default from the `preferences` table is used.
+1. **User cookie** — If a user has set a preference via the UI, it is stored in a browser cookie and takes precedence.
+2. **System default** — If no cookie is present, the system default from the `preferences` table is used.
 
 The application must read cookies on page load and apply them before rendering. If no cookie exists for a given preference, the system default is fetched from the database and applied.
 
@@ -180,10 +183,10 @@ The API must return results in JSON format:
 ### 6.5 Error Handling
 
 The API must return appropriate HTTP status codes and JSON error messages:
-- `200` – Success
-- `400` – Missing or invalid parameters
-- `404` – No results found
-- `500` – Server error
+- `200` — Success
+- `400` — Missing or invalid parameters
+- `404` — No results found
+- `500` — Server error
 
 ---
 
@@ -236,15 +239,44 @@ The API must return appropriate HTTP status codes and JSON error messages:
 
 ---
 
-## 9. Deliverables
+## 9. Deployment Requirement (Bluehost)
 
-- Fully functional web application
-- Source code (GitHub)
-- Technical documentation
-- Self-Evaluation Spreadsheet (from each team members)
+The web application **must be deployed to Bluehost** and **must be fully functional** in the hosted environment. Local development is expected during the build process, but all demonstrations and evaluations will be conducted from the live, deployed application.
+
+**Requirements:**
+
+- The application must be hosted on Bluehost and accessible via a live URL
+- All features — including search, admin dashboard, REST API, database operations, file uploads, and cookie-based preferences — must work correctly on the deployed site
+- Students are responsible for configuring Bluehost hosting, including PHP settings, MySQL database setup, file permissions, and any necessary `.htaccess` configurations
+- The deployed application must be kept up to date with the latest working version of the project throughout the semester
+
+**Weekly Demonstrations:**
+
+- All weekly progress demonstrations **must be given from the deployed application on Bluehost** — not from a local development environment (localhost)
+- If the application is not deployed or not functional on Bluehost at the time of a scheduled demo, the demonstration will be considered incomplete
+- This ensures students gain real-world experience with deployment, environment configuration, and production troubleshooting
+
+**Why this matters:**
+
+- Deployment is a critical professional skill — employers expect developers to ship working software, not just code that runs locally
+- Production environments expose issues (file paths, permissions, database connectivity, server configurations) that never surface in local development
+- Demonstrating from a live URL mirrors how real software is reviewed by stakeholders and end users
+
+> **Bottom line:** If it's not deployed and working on Bluehost, it's not done.
+
 ---
 
-## 10. Learning Outcomes
+## 10. Deliverables
+
+- Fully functional web application deployed on Bluehost
+- Live URL accessible for review
+- Source code (GitHub)
+- Technical documentation
+- Self-Evaluation Spreadsheet (from each team member)
+
+---
+
+## 11. Learning Outcomes
 
 - Full-stack development mastery
 - Database schema design
@@ -255,3 +287,4 @@ The API must return appropriate HTTP status codes and JSON error messages:
 - REST API design and implementation
 - Client-side state management with cookies
 - Data quality and integrity analysis
+- Production deployment and hosting configuration
