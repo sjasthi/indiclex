@@ -126,10 +126,10 @@ Students must design normalized MySQL tables.
 
 ---
 
-## 7. Advanced Features (Bonus)
+## 7. Advanced Features
 
 - Autocomplete search
-- Charts using Chart.js
+- Visualizations (Bar Charts, Pie Charts)
 - Role-based authorization
 - Performance optimization
 - Bulk uploads with validation
@@ -138,14 +138,10 @@ Students must design normalized MySQL tables.
 
 ## 8. Deliverables
 
-- Project proposal
-- ER diagram & database schema
-- UI wireframes
 - Fully functional web application
 - Source code (GitHub)
 - Technical documentation
-- Demo video (5–7 minutes)
-
+- Self-Evaluation Spreadsheet (from each team members)
 ---
 
 ## 9. Learning Outcomes
